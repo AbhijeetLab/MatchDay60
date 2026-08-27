@@ -1013,7 +1013,7 @@ function buildZoneGrid(team){
     label.setAttribute('x', labelRect.x + labelRect.w/2);
     label.setAttribute('y', labelRect.y + labelRect.h/2 + 3);
     label.setAttribute('class', 'zone-label');
-    label.textContent = role === 'GK' ? 'GK · centre only' : role;
+    label.textContent = role === 'GK' ? 'GK' : role;
     if (role === 'GK'){ label.setAttribute('x', 150); }
     g.appendChild(label);
   }
